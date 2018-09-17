@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#C4C4C4</color>
+    <color name="colorAccent">#212020</color>
+    <color name="search_view_hint_color">#999999</color>
+</resources>
