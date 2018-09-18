@@ -96,8 +96,11 @@ public class UserInfoActivity extends AppCompatActivity {
             public void onResponse(Call<List<Repo>> call, Response<List<Repo>> response) {
 
                 List<Repo> repoList=response.body();
-                GithubAdapter adapter=new GithubAdapter(UserInfoActivity.this,repoList);
-                reposRecyclerView.setAdapter(adapter);
+                if(response.body()!=null){
+                    GithubAdapter adapter=new GithubAdapter(UserInfoActivity.this,repoList);
+                    reposRecyclerView.setAdapter(adapter);
+                }
+
 
             }
 
